@@ -1,0 +1,12 @@
+1.如果zookeeper-3.4.10未解压缩
+tar -xzvf ./zookeeper-3.4.10
+
+2.创建libs目录,所有lib将复制到此目录
+mkdir /data/gameserver/libs
+chmod  -fR 777 /data/gameserver/libs
+
+3.编译zookeeper c api
+sudo ./make_zk.sh
+
+4.编译CppZooKeeper
+sudo ./make.sh
